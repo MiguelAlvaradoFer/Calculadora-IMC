@@ -4,6 +4,7 @@ import android.icu.text.TimeZoneFormat.TimeType
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
@@ -22,11 +23,29 @@ class MainActivity : AppCompatActivity() {
 
 
         btnCalcular.setOnClickListener {
-            val peso: Float= edtpeso.text.toString().toFloat()
-            val altura: Float = edtaltura.text.toString().toFloat()
 
-            val alturaQ2 = altura * altura
-            val resultado = peso / alturaQ2
-            println("Ação do botão " + resultado) }
+
+            val pesoSTR: String= edtpeso.text.toString()
+            val alturaSTR: String = edtaltura.text.toString()
+
+            if (pesoSTR == "" || alturaSTR == ""){
+
+                Snackbar.make(
+                    edtpeso,
+                    "preencha todos os campos",
+                    Snackbar.LENGTH_LONG
+                )
+                    .show()
+
+           } else {
+                val peso = pesoSTR.toFloat()
+                val altura alturaSTR.toFloat()
+
+                val alturaQ2 = altura * altura
+                val resultado = peso / alturaQ2
+                println("Ação do botão " + resultado)
+
+            }
+        }
     }
 }
