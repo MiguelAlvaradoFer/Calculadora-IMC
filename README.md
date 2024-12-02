@@ -1,14 +1,24 @@
 # Calculadora IMC
-Desc
+Esse projeto é um aplicativo onde você consegue por sua altura e peso e ele calcula o seu IMC na segunda tela, ele foi desenvolvido com linguagem de programação kotlin 
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+<img src="https://github.com/user-attachments/assets/81c22251-75b1-4085-b43f-1ffa015d2052" width=160/>
+<img src="https://github.com/user-attachments/assets/4b43488e-b749-404d-ad7c-463c6c731af6" width=160/> 
 
 ## Tecnologias
-Techs
-
-
+- Activity
+- Intent
+- Snackbar
+- ViewGroup
+  - LinearLayou
+  - ConstraintLayout
+- Views 
+  - ImageView
+  - TextView
+  - EditText
+  - Button
+ 
 ## License
 ```
 The MIT License (MIT)
